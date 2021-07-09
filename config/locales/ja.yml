@@ -1,6 +1,5 @@
 ---
 ja:
-  hello: 'こんにちは世界'
   activerecord:
     errors:
       messages:
