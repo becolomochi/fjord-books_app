@@ -13,6 +13,11 @@ en:
     top: Book
     edit: Editing Book
 
+  notice:
+    created: Book was successfully created.
+    updated: Book was successfully updated.
+    destroyed: Book was successfully destroyed.
+
   activerecord:
     models:
       book: Book  #g

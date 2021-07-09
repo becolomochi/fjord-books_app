@@ -13,6 +13,11 @@ ja:
     top: 本
     edit: 内容を更新する
 
+  notice:
+    created: 作成しました
+    updated: 更新しました
+    destroyed: 削除しました
+
   activerecord:
     models:
       book: 本  #g
