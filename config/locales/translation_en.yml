@@ -1,4 +1,13 @@
 en:
+  link:
+    show: Show
+    edit: Edit
+    destroy: Destroy
+    new: New Book
+
+  message:
+    destroy: Are you sure?
+
   activerecord:
     models:
       book: Book  #g

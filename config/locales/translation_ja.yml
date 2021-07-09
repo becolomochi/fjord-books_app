@@ -1,4 +1,13 @@
 ja:
+  link:
+    show: 見る
+    edit: 編集する
+    destroy: 削除する
+    new: 登録する
+
+  message:
+    destroy: 本当に削除しますか？
+
   activerecord:
     models:
       book: 本  #g
