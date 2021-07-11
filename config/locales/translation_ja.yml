@@ -1,13 +1,17 @@
 ja:
   link:
-    show: 見る
+    show: 詳細を見る
     edit: 編集する
     destroy: 削除する
     new: 登録する
-    back: 戻る
+    back: トップに戻る
 
   message:
     destroy: 本当に削除しますか？
+
+  title:
+    top: 本
+    edit: 内容を更新する
 
   activerecord:
     models:

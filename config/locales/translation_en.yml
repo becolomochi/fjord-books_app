@@ -9,6 +9,10 @@ en:
   message:
     destroy: Are you sure?
 
+  title:
+    top: Book
+    edit: Editing Book
+
   activerecord:
     models:
       book: Book  #g
