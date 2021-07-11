@@ -4,6 +4,7 @@ ja:
     edit: 編集する
     destroy: 削除する
     new: 登録する
+    back: 戻る
 
   message:
     destroy: 本当に削除しますか？

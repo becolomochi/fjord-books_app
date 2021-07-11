@@ -4,6 +4,7 @@ en:
     edit: Edit
     destroy: Destroy
     new: New Book
+    back: Back
 
   message:
     destroy: Are you sure?
