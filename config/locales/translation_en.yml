@@ -11,6 +11,7 @@ en:
 
   title:
     top: Book
+    new: New Book
     edit: Editing Book
 
   notice:
