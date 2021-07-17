@@ -14,9 +14,9 @@ en:
     edit: Editing Book
 
   notice:
-    created: Book was successfully created.
-    updated: Book was successfully updated.
-    destroyed: Book was successfully destroyed.
+    created: "%{name} was successfully created."
+    updated: "%{name} was successfully updated."
+    destroyed: "%{name} was successfully destroyed."
 
   activerecord:
     models:

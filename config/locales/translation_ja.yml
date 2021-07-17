@@ -14,9 +14,9 @@ ja:
     edit: 内容を更新する
 
   notice:
-    created: 作成しました
-    updated: 更新しました
-    destroyed: 削除しました
+    created: "%{name}を作成しました"
+    updated: "%{name}を更新しました"
+    destroyed: "%{name}を削除しました"
 
   activerecord:
     models:
