@@ -228,6 +228,11 @@ en:
     logout: Logout
     sign_up: Sign up
     login: Login
+    password_minimum: "%{length} characters minimum"
+    password_blank: leave blank if you don't want to change it
+    password_confirm: we need your current password to confirm your changes
+    cancel_account: Cancel my account
+    cancel_message: Unhappy?
   controllers:
     common:
       notice_create: "%{name} was successfully created."
