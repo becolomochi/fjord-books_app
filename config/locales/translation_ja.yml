@@ -1,0 +1,30 @@
+ja:
+  link:
+    show: 詳細を見る
+    edit: 編集する
+    destroy: 削除する
+    new: 登録する
+    back: トップに戻る
+
+  message:
+    destroy: 本当に削除しますか？
+
+  title:
+    new: 本を登録する
+    edit: 内容を更新する
+
+  notice:
+    created: "%{name}を作成しました"
+    updated: "%{name}を更新しました"
+    destroyed: "%{name}を削除しました"
+
+  activerecord:
+    models:
+      book: 本  #g
+
+    attributes:
+      book:
+        author: 著者  #g
+        memo: メモ  #g
+        picture: 画像  #g
+        title: 題名  #g

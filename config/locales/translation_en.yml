@@ -1,0 +1,30 @@
+en:
+  link:
+    show: Show
+    edit: Edit
+    destroy: Destroy
+    new: New Book
+    back: Back
+
+  message:
+    destroy: Are you sure?
+
+  title:
+    new: New Book
+    edit: Editing Book
+
+  notice:
+    created: "%{name} was successfully created."
+    updated: "%{name} was successfully updated."
+    destroyed: "%{name} was successfully destroyed."
+
+  activerecord:
+    models:
+      book: Book  #g
+
+    attributes:
+      book:
+        author: Author  #g
+        memo: Memo  #g
+        picture: Picture  #g
+        title: Title  #g
