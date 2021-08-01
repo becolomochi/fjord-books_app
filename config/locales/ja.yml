@@ -215,6 +215,16 @@ ja:
       delete_confirm: よろしいですか？
       title_new: "%{name}の新規作成"
       title_edit: "%{name}の編集"
+    logged_in_html: "<strong>%{email}</strong>でログイン中"
+    edit_profile: プロフィールを修正
+    logout: ログアウト
+    sign_up: 登録
+    login: ログイン
+    password_minimum: "%{length} 文字以上"
+    password_blank: 変更しない場合は空白にしてください
+    password_confirm: 変更を確認するためには、現在のパスワードが必要です
+    cancel_account: アカウントのキャンセル
+    cancel_message: 不満ですか？
     pagination:
       first: '最初'
       last: '最後'
