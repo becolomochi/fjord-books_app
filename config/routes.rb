@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   root to: 'books#index'
   resources :books
   resources :users, only: %i(index show) do
-    resources :relationships, only: %i(create destroy)
+    resources :follow_relationships, only: %i(create destroy)
     scope module: :users do
       resources :followings, only: %i(index)
       resources :followers, only: %i(index)
