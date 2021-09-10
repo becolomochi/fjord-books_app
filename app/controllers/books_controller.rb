@@ -14,6 +14,7 @@ class BooksController < ApplicationController
   def show
     @comments = Book.find(params[:id]).comments
   end
+
   # GET /books/new
   def new
     @book = Book.new
