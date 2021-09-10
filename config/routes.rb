@@ -3,10 +3,10 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'books#index'
   resources :reports do
-    resources :comments
+    resources :comments, only: [:create], module: :reports
   end
   resources :books do
-    resources :comments
+    resources :comments, only: [:create], module: :books
   end
   resources :users, only: %i[index show] do
     resource :relationships, only: %i[create destroy]
