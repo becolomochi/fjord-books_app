@@ -20,10 +20,24 @@
 
 <% if @comments.size > 0 %>
   <% @comments.each do |comment| %>
-    <div>
-      <%= debug comment %>
-      <%= comment.content %>
-      <%= comment.created_at %>
+    <div class="comment">
+      <p>
+        <strong><%= Comment.human_attribute_name(:comment) %>:</strong>
+        <%= comment.content %>
+      </p>
+      <p>
+        <strong><%= Comment.human_attribute_name(:created_at) %>:</strong>
+        <%= comment.created_at %>
+      </p>
+      <p>
+        <% if User.find(comment.user_id).name.present? %>
+          <strong><%= User.human_attribute_name(:name) %>:</strong>
+          <%= User.find(comment.user_id).name %>
+        <% else %>
+          <strong><%= User.human_attribute_name(:email) %>:</strong>
+          <%= User.find(comment.user_id).email %>
+        <% end %>
+      </p>
     </div>
   <% end %>
 <% else %>
