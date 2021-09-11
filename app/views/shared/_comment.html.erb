@@ -1,28 +1,11 @@
 <section>
-<h2>コメント</h2>
-
-<h3>コメントを入力する</h3>
-
-<%= form_with(model: [commentable, Comment.new], local: true) do |form| %>
-  <%= form.hidden_field :user_id, value: current_user.id %>
-
-  <div class="field">
-    <%= form.label :message %>
-    <%= form.text_area :message %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-<% end %>
-
-<h3>コメント一覧</h3>
+<h2><%= Comment.model_name.human %></h2>
 
 <% if @comments.size > 0 %>
   <% @comments.each do |comment| %>
     <div class="comment">
       <p>
-        <strong><%= Comment.human_attribute_name(:comment) %>:</strong>
+        <strong><%= Comment.human_attribute_name(:content) %>:</strong>
         <%= comment.content %>
       </p>
       <p>
@@ -41,7 +24,22 @@
     </div>
   <% end %>
 <% else %>
-  <div>コメントはまだありません<div>
+  <div><%= t('comments.no_contents') %><div>
+<% end %>
+
+<h3><%= t('views.common.title_new', name: Comment.model_name.human) %></h3>
+
+<%= form_with(model: [commentable, Comment.new], local: true) do |form| %>
+  <%= form.hidden_field :user_id, value: current_user.id %>
+
+  <div class="field">
+    <%= form.label :content %>
+    <%= form.text_area :content, required: true %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
 <% end %>
 
 </section>
