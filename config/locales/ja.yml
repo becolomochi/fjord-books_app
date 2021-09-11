@@ -240,6 +240,8 @@ ja:
     followers:
       index:
         title: フォロワー
+  comments:
+    no_contents: コメントはまだありません
   controllers:
     common:
       notice_create: "%{name}が作成されました。"

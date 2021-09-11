@@ -1,0 +1,45 @@
+<section>
+<h2><%= Comment.model_name.human %></h2>
+
+<% if @comments.size > 0 %>
+  <% @comments.each do |comment| %>
+    <div class="comment">
+      <p>
+        <strong><%= Comment.human_attribute_name(:content) %>:</strong>
+        <%= comment.content %>
+      </p>
+      <p>
+        <strong><%= Comment.human_attribute_name(:created_at) %>:</strong>
+        <%= comment.created_at %>
+      </p>
+      <p>
+        <% if comment.user.name.present? %>
+          <strong><%= User.human_attribute_name(:name) %>:</strong>
+          <%= comment.user.name %>
+        <% else %>
+          <strong><%= User.human_attribute_name(:email) %>:</strong>
+          <%= comment.user.email %>
+        <% end %>
+      </p>
+    </div>
+  <% end %>
+<% else %>
+  <div><%= t('comments.no_contents') %><div>
+<% end %>
+
+<h3><%= t('views.common.title_new', name: Comment.model_name.human) %></h3>
+
+<%= form_with(model: [commentable, Comment.new], local: true) do |form| %>
+  <%= form.hidden_field :user_id, value: current_user.id %>
+
+  <div class="field">
+    <%= form.label :content %>
+    <%= form.text_area :content, required: true %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+
+</section>
